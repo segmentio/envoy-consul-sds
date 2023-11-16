@@ -1,5 +1,8 @@
 # envoy-consul-sds - Envoy Consul Service Discovery Service
 
+> [!NOTE]
+> Segment has paused maintenance on this project, but may return it to an active status in the future. Issues and pull requests from external contributors are not being considered, although internal contributions may appear from time to time. The project remains available under its open source license for anyone to use.
+
 This tutorial is based on [Kelsey Hightower](https://github.com/kelseyhightower)'s [kubernetes-envoy-sds](https://github.com/kelseyhightower/kubernetes-envoy-sds) tutorial but using [Consul](https://consul.io) and [Nomad](https://www.nomadproject.io/).
 
 `envoy-consul-sds` service implements the [Envoy SDS API](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/service_discovery.html#service-discovery-service-sds) on top of [Consul Health Endpoint API](https://www.consul.io/api/health.html). `envoy-consul-sds` service returns a list of healthy endpoints for Envoy to use as upstream backends for a cluster. Each Consul service can be referenced in the Envoy config file by its DNS name.
